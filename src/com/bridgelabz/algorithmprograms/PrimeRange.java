@@ -2,8 +2,7 @@ package com.bridgelabz.algorithmprograms;
 import java.util.Scanner;
 
 public class PrimeRange {
-		public static void main(String[] args)
-			{
+		public static void main(String[] args){
 				int lowerLimit,upperLimit;
 				Scanner sc = new Scanner(System.in);
 				System.out.println("Enter lower limit: ");
@@ -11,7 +10,7 @@ public class PrimeRange {
 				System.out.println("Enter upper limit : ");
 				upperLimit = sc.nextInt();
 				PrimeRange range = new PrimeRange();
-				System.out.println("Prime numbers between given range are:");
+				System.out.println("Range of Prime numbers in between a given range:");
 				range.primeRange(lowerLimit,upperLimit);
 			}
 		public void primeRange(int lower,int upper) {
@@ -19,7 +18,6 @@ public class PrimeRange {
 					if (i == 1 && i == 0)
 						continue;
 					int flag = 1;
-
 					for (int j = 2; j <= i / 2; j++) {
 						if (i % j == 0) {
 							flag = 0;
